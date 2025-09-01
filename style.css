@@ -389,10 +389,10 @@ svg * {
 
 .slider {
   position: relative;
+  width: 400px;
 }
 
 .slider__viewport {
-  max-width: 400px;
   overflow: hidden;
   cursor: grab;
 }
@@ -641,7 +641,11 @@ svg * {
   }
 
   .slider {
-   max-width: 200px;
+    width: 200px;
+  }
+
+  .slider__button--next {
+    right: -10px;
   }
 }
 
@@ -693,7 +697,11 @@ svg * {
   }
 
   .slider {
-   max-width: 400px;
+    width: 400px;
+  }
+
+  .slider__button--next {
+    right: 0;
   }
 
   .about__reviews-title {
@@ -713,6 +721,10 @@ svg * {
 
 @media(max-width: 480px) {
   .slider {
-    max-width: 200px;
+    width: 200px;
+  }
+
+  .slider__button--next {
+    right: -10px;
   }
 }
