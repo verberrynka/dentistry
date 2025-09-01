@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стоматология</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/favicon.ico">
+  </head>
+
+  <body>
+    <main class="page-main">
+      <section class="promo section">
+        <div class="promo__inner container">
+          <picture class="promo__image">
+            <source type="image/webp" srcset="./assets/images/promo/image.webp">
+            <img
+              src="./assets/images/promo/image.png"
+              alt="Стоматолог показывает правильную технику чистки зубов"
+              width="801"
+              height="801"
+              loading="lazy"
+            >
+          </picture>
+          <div class="promo__info">
+            <h1 class="promo__info-title">Aкция</h1>
+            <p class="promo__info-description">
+              Профессиональная гигиена зубов + отбеливание системой Opalescence всего за&nbsp;<strong class="promo__info-price">9900&nbsp;руб.</strong>
+            </p>
+            <p class="promo__info-period">
+              Срок действия акции с <strong class ="promo__info-date"><time datetime="2013-12-01">01.12.2013</time></strong>&nbsp;г. до <strong class ="promo__info-date"><time datetime="2014-01-01">01.01.2014</time></strong>&nbsp;г.
+            </p>
+            <div class="promo__info-motivation">
+              <p>
+                Сделайте свою улыбку неотразимой и привлекательной
+              </p>
+            </div>
+          </div>
+          <div class="promo__form">
+            <h2 class="promo__form-title title-block">Участвовать в акции</h2>
+            <div class="promo__form-content">
+              <p class="promo__form-instruction">
+                Для того чтобы принять участие в акции позвоните нам: <a class="promo__form-phone link" href="tel:+78121234567">(812) 123-45-67</a> или оставьте ваш телефон:
+              </p>
+              <form class="form" action="" method="">
+                <div class="form__group">
+                  <input class="form__input" type="text" id="name" name="name" required autocomplete="off">
+                  <label class="form__label" for="name">Имя Фамилия</label>
+                </div>
+                <div class="form__group">
+                  <input class="form__input" type="tel" id="phone" name="phone" required autocomplete="off">
+                  <label class="form__label" for="phone">Контактный телефон</label>
+                </div>
+                <button class="form__submit" type="submit">Отправить заявку</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about section">
+        <div class="about__inner container">
+          <div class="about__content">
+            <div class="about__advantages block">
+              <h2 class="about__advantages-title title-block">
+                Преимущества Opalescence:
+              </h2>
+              <ul class="about__advantages-list list mark-list">
+                <li class="about__advantages-item item-square item-square--gray">
+                  Безопасность.
+                </li>
+                <li class="about__advantages-item item-square item-square--gray">
+                  Нейтральный рН геля не изменяет структуру зуба.
+                </li>
+                <li class="about__advantages-item item-square item-square--gray">
+                  Вода в составе геля не допускает обезвоживания зуба.
+                </li>
+                <li class="about__advantages-item item-square item-square--gray">
+                  Защита десен.
+                </li>
+                <li class="about__advantages-item item-square item-square--gray">
+                  Содержание фторидов уменьшает риск возникновения кариеса.
+                </li>
+                <li class="about__advantages-item item-square item-square--gray">
+                  Быстрый и стойкий результат.
+                </li>
+              </ul>
+            </div>
+            <div class="about__doctors block">
+              <h2 class="about__doctors-title title-block">
+                Наши специалисты
+              </h2>
+              <div class="about__doctors-slider">
+                <div class="slider">
+                  <button
+                    class="slider__button slider__button--prev slider__button--disabled"
+                    aria-label="Предыдущий слайд" 
+                    disabled
+                  >
+                  </button>
+                  <div class="slider__viewport">
+                    <ul class="slider__list">
+                      <li class="slider__item">
+                        <div class="slider__image-wrapper">
+                          <picture class="slider__image">
+                            <source type="image/webp" srcset="./assets/images/slider/doctor1.webp">
+                            <img
+                              src="./assets/images/slider/doctor1.png"
+                              alt="Фотография врача-стоматолога Иванова Ивана Ивановича"
+                              width="936"
+                              height="1008"
+                              loading="lazy"
+                            >
+                          </picture>
+                        </div>
+                        <p class="slider__name">Иванов&nbsp;Иван<br>Иванович</p>
+                      </li>
+                      <li class="slider__item">
+                        <div class="slider__image-wrapper">
+                          <picture class="slider__image">
+                            <source type="image/webp" srcset="./assets/images/slider/doctor2.webp">
+                            <img
+                              src="./assets/images/slider/doctor2.png"
+                              alt="Фотография врача-стоматолога Валерьевой Валерии Валерьевны"
+                              width="936"
+                              height="1008"
+                              loading="lazy"
+                            >
+                          </picture>
+                        </div>
+                        <p class="slider__name">Валерьева&nbsp;Валерия<br>Валерьевна</p>
+                      </li>
+                      <li class="slider__item">
+                        <div class="slider__image-wrapper">
+                          <picture class="slider__image">
+                            <source type="image/webp" srcset="./assets/images/slider/doctor3.webp">
+                            <img
+                              src="./assets/images/slider/doctor3.png"
+                              alt="Фотография врача-стоматолога Евгеньевой Евгении Евгеньевны"
+                              width="936"
+                              height="1008"
+                              loading="lazy"
+                            >
+                          </picture>
+                        </div>
+                        <p class="slider__name">Евгеньева&nbsp;Eвгения<br>Евгеньевна</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="slider__button slider__button--next"
+                    aria-label="Предыдущий слайд"
+                  >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about__info">
+            <div class="about__includes block">
+              <h2 class="about__includes-title title-block">
+                В стоимость входит
+              </h2>
+              <ul class="about__includes-list list mark-list">
+                <li class="about__includes-item item-square item-square--white">
+                  профессиональная чистка зубов
+                </li>
+                <li class="about__includes-item item-square item-square--white">
+                  отбеливание зубов системой Opalescence
+                </li>
+              </ul>
+            </div>
+            <div class="about__reviews block">
+              <h2 class="about__reviews-title title-block">
+                Отзывы о чистке зубов
+              </h2>
+              <ul class="about__reviews-list list">
+                <li class="about__reviews-item">
+                  <a class="about__reviews-link link" href="#">
+                    Сегодня была в вашей клинике, мне провели процедуру по снятию зубных отложений
+                  </a>
+                </li>
+                <li class="about__reviews-item">
+                  <a class="about__reviews-link link" href="#">
+                    В субботу была на чистке зубов (камни, налет)
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="about__benefits block">
+            <h2 class="about__benefits-title title-block">
+              Наши преимущества
+            </h2>
+            <ul class="about__benefits-list list mark-list">
+              <li class="about__benefits-item about__benefits-item--siren">
+                <p class="about__benefits-text">
+                  Гарантированное получение помощи при острой боли в день боли в день обращения
+                </p>
+              </li>
+              <li class="about__benefits-item about__benefits-item--guarantee">
+                <p class="about__benefits-text">
+                  Гарантия на все виды стоматологических услуг
+                </p>
+              </li>
+              <li class="about__benefits-item about__benefits-item--equality">
+                <p class="about__benefits-text">
+                  Обслуживание по ДМС
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <script defer src="./assets/scripts/input.js"></script>
+    <script defer src="./assets/scripts/slider.js"></script>
+
+  </body>
+</html>
