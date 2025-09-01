@@ -72,7 +72,6 @@ html {
   --container-width: 1200px;
   --container-padding-x: 20px;
 
-  /* gap and padding */
   --spacing-small: 14px; 
   --spacing-medium: 20px;
   --spacing-large: 40px;
@@ -91,7 +90,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* min-width: 300px; */
   font-family: var(--font-family);
   color: var(--color-black);
   font-size: 15px;
@@ -130,14 +128,6 @@ svg * {
 }
 
 .mark-list li {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-left: 50px;
-  min-height: 40px;
-}
-
-.item-square {
   position: relative;
   display: flex;
   align-items: center;
@@ -194,8 +184,18 @@ svg * {
 }
 
 .promo__image {
+  max-width: 100%;
+  height: 100%;
   border-radius: var(--border-radius-large);
   overflow: hidden;
+}
+
+.promo__image img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--border-radius-large);
 }
 
 .promo__info {
@@ -280,6 +280,10 @@ svg * {
   height: 100%;
   padding-inline: var(--spacing-small);
   padding-bottom: var(--spacing-small);
+}
+
+.promo__form-phone {
+  white-space: nowrap;
 }
 
 .form {
@@ -446,7 +450,7 @@ svg * {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px; /* 26 - 16 */
+  width: 36px;
   aspect-ratio: 1;
   padding: 7px;
   background-color: var(--color-white);
@@ -547,4 +551,168 @@ svg * {
 .about__benefits-item--equality::before {
   -webkit-mask-image: url("./assets/icons/equality.svg");
   mask-image: url("./assets/icons/equality.svg");
+}
+
+
+@media(max-width: 1024px) {
+
+  .section {
+    padding-block: 20px;
+  }
+
+  .promo__inner {
+    grid-template-columns: 1fr 2fr;
+    row-gap: var(--spacing-large);
+    column-gap: var(--spacing-large);
+  }
+
+  .promo__image {
+    aspect-ratio: 1;
+    max-height: 300px;
+  }
+
+  .promo__image img {
+    object-fit: contain;
+  } 
+
+  .promo__info {
+    max-height: 300px;
+    padding-right: 0;
+  }
+
+  .promo__info-title {
+    font-size: clamp(36px, 2.47vw + 18.72px, 44px);
+  }
+
+  .promo__info-description {
+    font-size: clamp(15px, 0.62vw + 10.68px, 17px);
+  }
+
+  .promo__info-price {
+    font-size: clamp(20px, 2.16vw + 4.88px, 27px);
+  }
+
+  .promo__info-motivation {
+    padding: clamp(10px, 3.09vw - 11.6px, 20px);
+    font-size: clamp(15px, 0.31vw + 12.84px, 16px);
+  }
+    
+  .promo__info-motivation::after {
+    display: none;
+  }
+
+  .promo__form {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  .about__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-large);
+  }
+
+  .about__content,
+  .about__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: var(--spacing-large);
+  }
+
+  .about__doctors-slider {
+    margin-inline: auto;
+  }
+
+  .about__reviews-title {
+    margin-bottom: var(--spacing-medium);
+  }
+
+  .about__reviews-item {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+  }
+}
+
+@media(max-width: 850px) {
+  .about__doctors-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .slider {
+   max-width: 200px;
+  }
+}
+
+@media(max-width: 700px) {
+  .title-block {
+    font-size: 20px;
+  }
+
+  .promo__inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: var(--spacing-medium);
+  }
+
+  .promo__image {
+    width: 100%;
+    max-height: 400px;
+    aspect-ratio: 3/2;
+  }
+
+  .promo__image img {
+    object-fit: cover;
+    object-position: top; 
+  } 
+
+  .promo__info {
+    row-gap: var(--spacing-medium);
+  }
+
+  .promo__info-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .promo__info-motivation {
+    text-align: center;
+  
+  }
+
+  .about__inner {
+    row-gap: 10px;
+  }
+
+  .about__content,
+  .about__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider {
+   max-width: 400px;
+  }
+
+  .about__reviews-title {
+    margin-bottom: 0;
+  }
+
+  .about__reviews-list {
+    max-width: 600px;
+    row-gap: var(--spacing-medium);
+  }
+
+  .about__reviews-item {
+    display: block;
+    min-height: none;
+  }
+}
+
+@media(max-width: 480px) {
+  .slider {
+    max-width: 200px;
+  }
 }
