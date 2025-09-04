@@ -484,11 +484,11 @@ svg * {
 } 
 
 @media (hover: hover) and (pointer: fine) {
-  .slider__button:hover {
+  .slider__button:not(.slider__button--disabled):hover {
     background-color: var(--color-blue);
   }
 
-  .slider__button:hover::after {
+  .slider__button:not(.slider__button--disabled):hover::after {
     background-color: var(--color-white);
   }
 }
@@ -504,14 +504,6 @@ svg * {
 .slider__button--disabled {
   opacity: 0.2;
   cursor: default;
-}
-
-.slider__button--disabled:hover {
-  background-color: var(--color-white); 
-}
-
-.slider__button--disabled:hover::after {
-  background-color: var(--color-black);
 }
 
 .about__includes-list {
